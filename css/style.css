@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #181818;
+}
+
+.draggable {
+  height: 300px;
+  width: 256px;
+  text-decoration: none;
+}
+
+#dropzone {
+  background-image: url(http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-inlay-crystal-clear-bubble-icons-animals/010822-black-inlay-crystal-clear-bubble-icon-animals-animal-cat-print.png);
+  background-size: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+#dropzone:after {
+    content: "Cat Dropzone";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    text-align: center;
+}
+
+.drop-success {
+  background-color: #87D37C;
+}
+
+.hover-content {
+  position: absolute;
+  display: none;
+  z-index: -1;
+}
+
+#hover-cat-1, #hover-cat-2, #hover-cat-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  opacity: .5;
+}
+
+#hover-cat-1 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/387928/sleepy-cat.png);
+}
+#hover-cat-2 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/387928/grumpy-cat.png);
+}
+#hover-cat-3 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/387928/purr-cat.png);
+}
